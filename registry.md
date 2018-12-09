@@ -12,7 +12,7 @@ docker run -d -p 5000:5000 --restart always --name registry -v $PWD/data:/var/li
 
   ```json
   {
-    "insecure-registries" : [ "127.0.0.1:5000"]
+    "insecure-registries" : [ "ip:5000"]
   }
   ```
 
