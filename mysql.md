@@ -3,7 +3,7 @@
 ```shell
 #!/bin/bash
 docker rm -f mysql55
-docker run --name=mysql55 -d --restart=always -e MYSQL_ROOT_PASSWORD=your_password -p 3306:3306 -p 33060:33060 -v $PWD/data55:/var/lib/mysql mysql:5.5
+docker run --name=mysql55 -d --restart=always -e MYSQL_ROOT_PASSWORD=your_password -p 3306:3306 -p 33060:33060 -v $PWD/data55:/var/lib/mysql mysql:5.5 --max_connections 1000
 ```
 
 ## 防火墙端口开放
