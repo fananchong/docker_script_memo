@@ -26,7 +26,7 @@ docker run -d -v $PWD/data:/home/vsftpd \
   ```shell
   /sbin/iptables -A INPUT -p tcp --dport 20 -j ACCEPT
   /sbin/iptables -A INPUT -p tcp --dport 21 -j ACCEPT
-  /sbin/iptables -A INPUT -p tcp --dport 47400:47400 -j ACCEPT
+  /sbin/iptables -A INPUT -p tcp --dport 47400:47470 -j ACCEPT
   ```
 
 - 使端口开放
