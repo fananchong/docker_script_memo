@@ -23,6 +23,10 @@
 1. authorized_keys 中添加公钥
 
 
+1. 确保相关目录文件的权限
+    - .ssh目录的权限必须是700
+    - .ssh/authorized_keys文件权限必须是600
+
 ## 防火墙端口开放
 
 - 修改 /etc/rc.d/forword：
