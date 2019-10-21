@@ -12,6 +12,13 @@ docker run -d -v $PWD/data:/home/vsftpd \
                 --restart=always bogem/ftp
 ```
 
+OR
+
+```shell
+docker run -d -v $PWD/ftp_data:/home/vsftpd -p 21:21 -e FTP_USER=abc -e FTP_PASS=123 -e HOST=localhost -p 65000-65004:65000-65004 -e PASV_MIN_PORT=65000 -e PASV_MAX_PORT=65004 --name ftp --restart=always mcreations/ftp
+```
+
+
 ## 防火墙端口开放
 
 - 修改 /etc/rc.d/forword：
