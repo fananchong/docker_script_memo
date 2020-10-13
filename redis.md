@@ -3,7 +3,7 @@
 ```shell
 #!/bin/bash
 docker rm -f redis
-docker run --name=redis -d --restart=always -p 6379:6379 -v $PWD/data:/data redis redis-server --appendonly yes --bind 0.0.0.0 --protected-mode yes --requirepass 123456
+docker run --name=redis -d --restart=unless-stopped --user root -p 6379:6379 -v $PWD/data:/data redis redis-server --appendonly yes --bind 0.0.0.0 --protected-mode yes --requirepass 123456
 ```
 
 ## 防火墙端口开放

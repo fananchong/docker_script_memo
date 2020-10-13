@@ -3,7 +3,7 @@
 ```shell
 #!/bin/bash
 docker rm -f gophernotes
-docker run -d -p 8888:8888 --restart always --name gophernotes -v $PWD/data:/path/to/notebooks/in/docker gopherdata/gophernotes:latest-ds
+docker run -d -p 8888:8888 --restart unless-stopped --user root --name gophernotes -v $PWD/data:/path/to/notebooks/in/docker gopherdata/gophernotes:latest-ds
 docker logs gophernotes
 ```
 
