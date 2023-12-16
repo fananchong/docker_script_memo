@@ -1,0 +1,4 @@
+listeners:
+  client:
+    protocol: PLAINTEXT
+    name: root

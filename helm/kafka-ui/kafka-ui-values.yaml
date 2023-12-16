@@ -1,0 +1,5 @@
+yamlApplicationConfig:
+  kafka:
+    clusters:
+      - name: my-kafka.default.svc.cluster.local
+        bootstrapServers: my-kafka.default.svc.cluster.local:9092

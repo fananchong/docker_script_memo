@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: data-mykafka-controller-pv-0
+  name: data-my-kafka-controller-pv-0
 spec:
   capacity:
     storage: 8Gi
@@ -10,13 +10,13 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   hostPath:
-    path: /data/data-mykafka-controller-data-0
+    path: /data/data-my-kafka-controller-data-0
 
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: data-mykafka-controller-pv-1
+  name: data-my-kafka-controller-pv-1
 spec:
   capacity:
     storage: 8Gi
@@ -25,13 +25,13 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   hostPath:
-    path: /data/data-mykafka-controller-data-1
+    path: /data/data-my-kafka-controller-data-1
 
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: data-mykafka-controller-pv-2
+  name: data-my-kafka-controller-pv-2
 spec:
   capacity:
     storage: 8Gi
@@ -40,4 +40,4 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   hostPath:
-    path: /data/data-mykafka-controller-data-2
+    path: /data/data-my-kafka-controller-data-2

@@ -1,8 +1,8 @@
 ❯ helm repo add kafka-ui https://provectus.github.io/kafka-ui-charts
 "kafka-ui" has been added to your repositories
-❯ helm install my-kafka-ui kafka-ui/kafka-ui --version 0.7.5
+❯ helm install my-kafka-ui kafka-ui/kafka-ui --version 0.7.5 -f kafka-ui-values.yaml
 NAME: my-kafka-ui
-LAST DEPLOYED: Sat Dec 16 07:40:39 2023
+LAST DEPLOYED: Sat Dec 16 11:59:36 2023
 NAMESPACE: default
 STATUS: deployed
 REVISION: 1
